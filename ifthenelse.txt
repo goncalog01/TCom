@@ -1,0 +1,233 @@
+start Q___ Q1__ rrss len1
+
+len1 0___ 01__ rrss len1
+len1 1___ 11__ rrss len1
+len1 2___ 21__ rrss len1
+len1 3___ 31__ rrss len1
+len1 4___ 41__ rrss len1
+len1 5___ 51__ rrss len1
+len1 6___ 61__ rrss len1
+len1 7___ 71__ rrss len1
+len1 8___ 81__ rrss len1
+len1 9___ 91__ rrss len1
+len1 A___ A___ rsss div12
+
+div12 0___ 0___ rsss div12
+div12 1___ 1___ rsss div12
+div12 2___ 2___ rsss div12
+div12 3___ 3___ rsss div12
+div12 4___ 4___ rsss div12
+div12 5___ 5___ rsss div12
+div12 6___ 6___ rsss div12
+div12 7___ 7___ rsss div12
+div12 8___ 8___ rsss div12
+div12 9___ 9___ rsss div12
+div12 A___ A___ rsss div12
+div12 Y___ Y___ rsss div12
+div12 N___ N___ rsss div12
+div12 Q___ Q___ rsss div12
+div12 R___ R___ rsss div12
+div12 L___ L___ rsss div12
+div12 S___ S___ rsss div12
+div12 ;___ ;___ rsss div12
+div12 $___ $___ rlss len2
+
+len2 Q*__ Q1__ rlss len2
+len2 0*__ 01__ rlss len2
+len2 1*__ 11__ rlss len2
+len2 2*__ 21__ rlss len2
+len2 3*__ 31__ rlss len2
+len2 4*__ 41__ rlss len2
+len2 5*__ 51__ rlss len2
+len2 6*__ 61__ rlss len2
+len2 7*__ 71__ rlss len2
+len2 8*__ 81__ rlss len2
+len2 9*__ 91__ rlss len2
+len2 A*__ A*__ rlss bob2a
+len2 A___ A___ rrss bob2a
+
+bob2a *1__ *1__ slss bob2a
+bob2a *___ *___ ssss div23
+
+div23 0___ 0___ rsss div23
+div23 1___ 1___ rsss div23
+div23 2___ 2___ rsss div23
+div23 3___ 3___ rsss div23
+div23 4___ 4___ rsss div23
+div23 5___ 5___ rsss div23
+div23 6___ 6___ rsss div23
+div23 7___ 7___ rsss div23
+div23 8___ 8___ rsss div23
+div23 9___ 9___ rsss div23
+div23 A___ A___ rsss div23
+div23 Y___ Y___ rsss div23
+div23 N___ N___ rsss div23
+div23 Q___ Q___ rsss div23
+div23 R___ R___ rsss div23
+div23 L___ L___ rsss div23
+div23 S___ S___ rsss div23
+div23 ;___ ;___ rsss div23
+div23 $___ $___ rsss len3
+
+len3 Q___ Q___ srss len3
+len3 Q*__ Q1__ rrss len3
+len3 0*__ 01__ rrss len3
+len3 1*__ 11__ rrss len3
+len3 2*__ 21__ rrss len3
+len3 3*__ 31__ rrss len3
+len3 4*__ 41__ rrss len3
+len3 5*__ 51__ rrss len3
+len3 6*__ 61__ rrss len3
+len3 7*__ 71__ rrss len3
+len3 8*__ 81__ rrss len3
+len3 9*__ 91__ rrss len3
+len3 A*__ A*__ llss bob
+
+;bob 1a
+bob **__ **__ lsss bob
+;bob 2a
+bob _*__ _*__ slss bob
+;inicio fita
+bob ____ ____ rrss qin
+
+;;;;;;;;;;;;;;;
+qin Q1__ Q1Q_ rrrs qin
+qin 01__ 010_ rrrs qin
+qin 11__ 111_ rrrs qin
+qin 21__ 212_ rrrs qin
+qin 31__ 313_ rrrs qin
+qin 41__ 414_ rrrs qin
+qin 51__ 515_ rrrs qin
+qin 61__ 616_ rrrs qin
+qin 71__ 717_ rrrs qin
+qin 81__ 818_ rrrs qin
+qin 91__ 919_ rrrs qin
+qin A1__ A10_ srrs qin
+qin A___ A_A_ rlrs dbob2
+
+dbob2 ***_ ***_ slss dbob2
+dbob2 *_*_ *_*_ srss bob1
+
+bob1 Q1__ Q1__ ssss qin
+bob1 _1__ _1__ ssls bob3
+bob1 01__ 010_ rsrs bob1
+bob1 11__ 111_ rsrs bob1
+bob1 21__ 212_ rsrs bob1
+bob1 31__ 313_ rsrs bob1
+bob1 41__ 414_ rsrs bob1
+bob1 51__ 515_ rsrs bob1
+bob1 61__ 616_ rsrs bob1
+bob1 71__ 717_ rsrs bob1
+bob1 81__ 818_ rsrs bob1
+bob1 91__ 919_ rsrs bob1
+bob1 A1__ A1A_ rsrs bob1
+bob1 $1__ $1$_ rsrs bob1
+bob1 Y1__ Y1__ ssss qy
+bob1 N1__ N1__ ssss qn
+bob1 R1__ R1R_ rsrs bob1
+bob1 L1__ L1L_ rsrs bob1
+bob1 S1__ S1S_ rsrs bob1
+bob1 ;1__ ;1;_ rsrs bob1
+
+bob3 _1*_ _1*_ ssls bob3
+bob3 _1__ _1__ ssrs qin1
+bob3 $1__ $1$_ rsrs qin
+
+qy Y1__ Y1Y_ rrrs qy
+qy A1__ A1Y_ srrs qy
+qy A___ A_A_ rlrs dbob2
+
+qn N1__ N1N_ rrrs qn
+qn A1__ A1N_ srrs qn
+qn A___ A_A_ rlrs dbob2
+
+
+;;;;;;;;;
+qin1 **Q_ **QQ sssr add0
+qin1 **0_ **00 ssrr qin1
+qin1 **1_ **11 ssrr qin1
+qin1 **2_ **22 ssrr qin1
+qin1 **3_ **33 ssrr qin1
+qin1 **4_ **44 ssrr qin1
+qin1 **5_ **55 ssrr qin1
+qin1 **6_ **66 ssrr qin1
+qin1 **7_ **77 ssrr qin1
+qin1 **8_ **88 ssrr qin1
+qin1 **9_ **99 ssrr qin1
+qin1 **R_ **RR ssrr qin1
+qin1 **L_ **LL ssrr qin1
+qin1 **S_ **SS ssrr qin1 
+qin1 **A_ **AA ssrr qin1
+qin1 **;_ **;; ssrr qin1
+qin1 **N_ **NQ ssrr repn
+qin1 **Y_ **YQ ssrr repy
+qin1 **$_ **$; ssrr q$1
+
+repy **Y_ **Y1 sssr boby
+boby **Y_ **Y0 ssrr boby
+boby **A_ **AA ssrr qin1
+
+repn **N_ **N2 sssr bobn
+bobn **N_ **N0 ssrr bobn
+bobn **A_ **AA ssrr qin1
+
+add0 **Q_ **Q0 ssrr qin1
+
+q$1 **0_ **00 ssrr q$1
+q$1 **1_ **11 ssrr q$1
+q$1 **2_ **22 ssrr q$1
+q$1 **3_ **33 ssrr q$1
+q$1 **4_ **44 ssrr q$1
+q$1 **5_ **55 ssrr q$1
+q$1 **6_ **66 ssrr q$1
+q$1 **7_ **77 ssrr q$1
+q$1 **8_ **88 ssrr q$1
+q$1 **9_ **99 ssrr q$1
+q$1 **R_ **RR ssrr q$1
+q$1 **L_ **LL ssrr q$1
+q$1 **S_ **SS ssrr q$1
+q$1 **A_ **AA ssrr q$1
+q$1 **N_ **NN sssr qn+1
+q$1 **;_ **;; ssrr q$1
+q$1 **Q_ **QQ sssr add1
+q$1 **$_ **$; ssrr q$2
+q$1 **Y_ **YY sssr qy+1
+
+qy+1 **Y_ **YY ssrr qy+1
+qy+1 **A_ **AA ssrr q$1
+
+qn+1 **N_ **NN ssrr qn+1
+qn+1 **A_ **AA ssrr q$1
+
+add1 **Q_ **Q1 ssrr q$1
+
+bobf **_* **_* sssl bobf
+bobf **__ **__ sssr halt-accept
+
+q$2 **0_ **00 ssrr q$2
+q$2 **1_ **11 ssrr q$2
+q$2 **2_ **22 ssrr q$2
+q$2 **3_ **33 ssrr q$2
+q$2 **4_ **44 ssrr q$2
+q$2 **5_ **55 ssrr q$2
+q$2 **6_ **66 ssrr q$2
+q$2 **7_ **77 ssrr q$2
+q$2 **8_ **88 ssrr q$2
+q$2 **9_ **99 ssrr q$2
+q$2 **R_ **RR ssrr q$2
+q$2 **L_ **LL ssrr q$2
+q$2 **S_ **SS ssrr q$2
+q$2 **A_ **AA ssrr q$2
+q$2 **N_ **NN sssr qn+2
+q$2 **;_ **;; ssrr q$2
+q$2 **Q_ **QQ sssr add2
+q$2 **__ **__ sssl bobf
+q$2 **Y_ **YY sssr qy+2
+
+add2 **Q_ **Q2 ssrr q$2
+
+qy+2 **Y_ **YY ssrr qy+2
+qy+2 **A_ **AA ssrr q$2
+
+qn+2 **N_ **NN ssrr qn+2
+qn+2 **A_ **AA ssrr q$2
